@@ -1,87 +1,163 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>International Noodles!</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-</head>
-<body>
-  <img class= "banner" src="img/non_food/banner.png" alt="Banner"/>
-  <div class="nav">
-    <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="interactive_map_page.html">Interactive Map</a>
-                </li>
-                <li>
-                    <a href="rankings_page.html">Rankings</a>
-                </li>
-                <li>
-                    <a href="recipes_page.html">Recipes</a>
-                </li>
-                <li>
-                    <a class="activated" href="fun_facts_page.html">Fun Facts</a>
-                </li>
-                <li>
-                    <a href="about_page.html">About Page</a>
-                </li>
-                <li>
-                  <a href="signup.html">Sign Up Form</a>
-                </li>
-                  <li>
-                    <a href="contact_page.html">Contact Us</a>
-                </li>
-            </ul>
-        </nav>
+  <head>
+    <meta charset="utf-8">
+    <title>Example Bootstrap Document</title>
+
+    <!-- This says our CSS is compatible with phones, and phones
+         don't need to scale it strangely. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Main CSS styles for Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Optional theme add-on -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/materia/bootstrap.min.css">
+
+    <!-- If you don't like how sandstone looks, go here and see other themes
+         that are available:
+         https://bootswatch.com/
+
+         You can replace the 'optional theme' with links from the page below
+         to get that theme:
+         https://www.bootstrapcdn.com/bootswatch/
+    -->
+
+  </head>
+
+  <body>
+
+    <!-- For more info about the navbar, see:
+    https://getbootstrap.com/docs/4.0/components/navbar/
+    --->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">International Noodles</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="interactive_map_page.html">Interactive Map</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="rankings_page.html">Rankings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="recipes_page.html">Recipes</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="fun_facts_page.html">Fun Facts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about_page.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html">Sign Up Form</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact_page.html">Contact Us</a>
+          </li>
+      
+        </ul>
+
+      </div>
+    </nav>
+
+    <!-- Main content
+     Put your main content in a dic named 'container'.
+     This includes your footer.
+     Otherwise everything will stretch to the edge of the  screen.
+     -->
+    <div class="container">
+      <h1 style="margin: 50px 0px 25px 0px">Fun Facts</h1>
+  <div class="row" style="background-color: rgb(240,240,250);">
+    <div class="col-sm">
+      <h2 class="col-sm" style="margin:25px 0px 25px 0px;">Asia</h2>
+    </div>
+    <div class="col-sm" style="margin: 25px 0px 25px 0px;">
+      <ol class="list-group">
+        <li class="list-group-item">India produces&comma; consumes&comma; and exports the most chili peppers in the world&period;</li>
+        <li class="list-group-item">In Japan&comma; a puffer fish dinner can paralyze and asphyxiate the diner&period;</li>
+      </ol>
+    </div>
   </div>
-  <div class="wrapper">
-    <article class="list">
-      <h2>Fun Facts</h2>
-      <h3>Asia</h3>
-        <ol>
-            <li>India produces&comma; consumes&comma; and exports the most chili peppers in the world&period;</li>
-            <li>In Japan&comma; a puffer fish dinner can paralyze and asphyxiate the diner&period;</li>
+  <div class="row">
+    <div class="col-sm">
+      <h2 class="col-sm" style="margin:25px 0px 25px 0px;">Australia</h2>
+    </div>
+    <div class="col-sm" style="margin:25px 0px 25px 0px;">
+      <ol class="list-group">
+        <li class="list-group-item">The number of fish fingers sold in Australia each year would cover an area the size of Tasmania&period;</li>
+          <li class="list-group-item">
+            Exotic meats like kangaroo&comma; crocodile&comma; emu&comma; and snake meat can be found in grocery stores
+            &period;
+          </li>
         </ol>
-        
-        <h3>Australia</h3>
-        <ol>
-            <li>The number of fish fingers sold in Australia each year would cover an area the size of Tasmania&period;</li>
-            <li>Exotic meats like kangaroo&comma; crocodile&comma; emu&comma; and snake meat can be found in grocery stores&period;</li>
-        </ol>
-        
-        <h3>Africa</h3>
-        <ol>
-            <li>Jollof rice is a popular dish to prepare for large family gatherings and parties&period;</li>
-            <li>Chambo is a popular dish in South Africa that is made from a fish found predominately in Lake Malawi&period;</li>
-        </ol>
-        
-        <h3>Europe</h3>
-        <ol>
-            <li>In 2008&comma; Italy exported 1&period;7 million tons of spaghetti&period;</li>
-            <li>In France&comma; people eat approximately 500&comma;000&comma;000 snails per year&period;</li>
-        </ol>
-        
-        <h3>North America</h3>
-        <ol>
-            <li>49&percnt; of Americans eats a sandwich every day&period;</li>
-            <li>Canada produces 71&percnt; of the world&apos;s maple syrup&period;</li>
-        </ol>
-        
-        <h3>South America</h3>
-        <ol>
-            <li>In Columbia&comma; dried ants are a popular popcorn alternative for moviegoers&period;</li>
-            <li>In Peru&comma; they eat fried guinea pig&period;</li>
-        </ol>
-    </article>
+    </div>
   </div>
-  <div class="footer">
-    <footer>
-        <p class="white_space">&copy;International Noodles             Contact us at internationalnoodles@gmail.com</p>
-    </footer>
+  <div class="row" style="background-color: rgb(240,240,250);">
+    <div class="col-sm">
+      <h2 class="col-sm" style="margin:25px 0px 25px 0px;">Africa</h2>
+    </div>
+    <div class="col-sm" style="margin: 25px 0px 25px 0px;">
+      <ol class="list-group">
+        <li class="list-group-item">Jollof rice is a popular dish to prepare for large family gatherings and parties&period;</li>
+        <li class="list-group-item">Chambo is a popular dish in South Africa that is made from a fish found predominately in Lake Malawi&period;</li>
+      </ol>
+    </div>
   </div>
-</body>
+  <div class="row">
+    <div class="col-sm">
+      <h2 class="col-sm" style="margin:25px 0px 25px 0px;">Europe</h2>
+    </div>
+    <div class="col-sm" style="margin:25px 0px 25px 0px;">
+      <ol class="list-group">
+        <li class="list-group-item">In 2008&comma; Italy exported 1&period;7 million tons of spaghetti&period;</li>
+          <li class="list-group-item">
+            In France&comma; people eat approximately 500&comma;000&comma;000 snails per year&period;
+          </li>
+        </ol>
+    </div>
+  </div>
+  <div class="row" style="background-color: rgb(240,240,250);">
+    <div class="col-sm">
+      <h2 class="col-sm" style="margin:25px 0px 25px 0px;">North America</h2>
+    </div>
+    <div class="col-sm" style="margin: 25px 0px 25px 0px;">
+      <ol class="list-group">
+        <li class="list-group-item">49&percnt; of Americans eats a sandwich every day&period;</li>
+        <li class="list-group-item">Canada produces 71&percnt; of the world&apos;s maple syrup&period;</li>
+      </ol>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <h2 class="col-sm" style="margin:25px 0px 25px 0px;">South America</h2>
+    </div>
+    <div class="col-sm" style="margin:25px 0px 25px 0px;">
+      <ol class="list-group">
+        <li class="list-group-item">In Columbia&comma; dried ants are a popular popcorn alternative for moviegoers&period;</li>
+          <li class="list-group-item">
+            In Peru&comma; they eat fried guinea pig&period;
+          </li>
+        </ol>
+    </div>
+  </div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
